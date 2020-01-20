@@ -21,7 +21,7 @@
   ],
   "require": {
     "php": ">=7.2",
-    "doctrine/doctrine-bundle": "^1.8"
+    "doctrine/doctrine-bundle": "^1.8|^2.0"
   },
   "require-dev": {
     "symfony/monolog-bundle": "^3.0",
