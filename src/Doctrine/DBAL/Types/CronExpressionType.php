@@ -18,7 +18,7 @@ class CronExpressionType extends Type
     /**
      * {@inheritdoc}
      */
-    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
+    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
     {
         return $platform->getVarcharTypeDeclarationSQL($fieldDeclaration);
     }
@@ -29,7 +29,7 @@ class CronExpressionType extends Type
      *
      * @return CronExpression
      */
-    public function convertToPHPValue($value, AbstractPlatform $platform)
+    public function convertToPHPValue($value, AbstractPlatform $platform): CronExpression
     {
         return CronExpression::factory($value);
     }

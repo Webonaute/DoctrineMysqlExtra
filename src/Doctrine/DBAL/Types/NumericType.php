@@ -19,7 +19,7 @@ class NumericType extends DecimalType
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function getName(): string
     {
         return self::NUMERIC;
     }
@@ -27,7 +27,7 @@ class NumericType extends DecimalType
     /**
      * {@inheritdoc}
      */
-    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
+    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
     {
         return $platform->getNumericTypeDeclarationSQL($fieldDeclaration);
     }
