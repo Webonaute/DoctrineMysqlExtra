@@ -38,7 +38,7 @@ class CronExpressionType extends Type
      * @param CronExpression $value
      * @param AbstractPlatform $platform
      *
-     * @return string
+     * @return mixed The database representation of the value.
      */
     public function convertToDatabaseValue($value, AbstractPlatform $platform): string
     {
